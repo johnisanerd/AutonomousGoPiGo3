@@ -1,0 +1,24 @@
+
+Part 1:  See a Stop Sign, Yield Sign, or Crosswalk
+	Training Data:  Take 200 images of each sign, 200 images of no sign.
+	Input:  Pi Camera
+	Output:  Motors / Stop
+
+		1.  Write a program that takes pictures and saves them.  Reduce the picture size to about 250 px width.
+		2.  Save the data into three folders:  Stop, Crosswalk, and StopLight.
+		3.  Program three behaviors when you see the sign:  stop, look both ways, wait 5 seconds.
+	
+	
+Setup
+	1.  Install Cinch
+	2.  Add the Pi Camera, the button.
+	3.  Connect in the command line over ethernet.  COnnect over VNC.
+	4.  Take a picture:  raspistill -o cam.jpg
+	5.  Take a smaller picture:  raspistill -o cam.jpg --width 300 -h 225 --quality 10
+	
+	mkdir AutonomousGoPiGo3
+	Clone 
+	sudo chown pi:pi -R ~/AutonomousGoPiGo3/
+	Setup Cinch
+		cd di_update/Raspbian_For_Robots/upd_script/wifi/
+		sudo bash cinch_setup.sh
